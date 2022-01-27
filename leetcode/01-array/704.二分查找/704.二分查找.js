@@ -31,7 +31,7 @@ var search2 = function(nums, target) {
   let right = nums.length - 1
 
   while (left <= right) {
-    let mid = left + Math.floor((right-left)/2)
+    let mid = Math.floor(left + (right-left)/2)
 
     if (nums[mid] < target) {
       left = mid +1
@@ -50,7 +50,7 @@ var search4 = function(nums, target) {
   let right = nums.length
 
   while (left < right) {
-    let mid = left + Math.floor((right-left)/2)
+    let mid = Math.floor(left + (right-left)/2)
 
     if (nums[mid] > target) {
       right = mid 
